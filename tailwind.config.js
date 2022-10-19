@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        starter:['Creepster']
+        starter:['Creepster'],
+        starter2:['Fuzzy Bubbles']
       }
     },
   },
