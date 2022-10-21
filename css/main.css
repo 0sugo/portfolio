@@ -869,6 +869,10 @@ video {
   place-content: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
