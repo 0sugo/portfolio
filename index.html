@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Joseck 0sugo</title>
 </head>
 
@@ -51,10 +57,10 @@
 
     </div>
         <nav class="flex justify-center space-x-4 pt-16 md:pt-8">
-        <a href="index.html"class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Home</a>
-        <a href="projects.html"class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Project</a>
-        <a href="about.html" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</a>
-        <a href="" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Contact</a>
+            <button onclick="toggleModal()" type="button" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Home</button>
+            <button onclick="toggleModal()" type="button" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Project</button>
+            <button onclick="toggleModal()" type="button" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">About</button>
+            <button onclick="toggleModal()" type="button" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Contact</button>
 
     </nav>
     <div class="text-4xl font-mono inline-block justify-center text-center h-40 w-auto mt-8 md:mt-28 left-1/2 md:-ml-60 md:absolute" >
@@ -77,17 +83,39 @@
         </div>
         </div> -->
 
+        <button onclick="toggleModal()" type="button">Open Modal</button>
+    <div class="modal-background" onclick="toggleModal()"></div>
+    <div class="modal">
+      <h2>Modal Window</h2>
+      <p>
+        You have opened the modal, they are great for confirming actions or
+        displaying critical information.
+      </p>
+    </div>
+
 
 <footer class="h-10 w-full bottom-0 fixed flex">
 
 <p class="flex justify-center space-y-4 py-3 pl-10 text-xs font-mono "><span class="font-bold">COPYRIGHT 2022 </span>  | Joseck Osugo </p>
 <!-- <div class="border-r-4 border-indigo-50"></div> -->
 </footer>
-<h1>cjbdjnc</h1>
-<h1>cjbdjnnd jbdxc</h1>
+
 
 
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+<script>
+    const toggleModal = () => {
+      const bodyClassList = document.body.classList;
+
+      if (bodyClassList.contains("open")) {
+        bodyClassList.remove("open");
+        bodyClassList.add("closed");
+      } else {
+        bodyClassList.remove("closed");
+        bodyClassList.add("open");
+      }
+    };
+  </script>
 </body>
 
 </html>
