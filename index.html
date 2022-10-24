@@ -67,7 +67,7 @@
         <p>
             HELLO, <span>I AM</span>
              <br>
-             <div  class="font-starter2 md:text-6xl py-3 justify-center">
+             <div  class="font-starter2 md:text-6xl py-3 justify-center ">
                 JOSECK OSUGO... <br>
 
              </div>
@@ -94,8 +94,16 @@
       </p>
     </div>
 
+    
+    <div class="modal-background" onclick="toggleModal1()"></div>
+    <div class="modal">
+      <h2>Modal Window</h2>
+      <p>
+        modal2 mfmgjgjg
+      </p>
+    </div>
 
-<footer class="h-10 w-full bottom-0 fixed flex">
+<footer class="h-10 w-full bottom-0 fixed flex bg-slate-700">
 
 <p class="flex justify-center space-y-4 py-3 pl-10 text-xs font-mono "><span class="font-bold">COPYRIGHT 2022 </span>  | Joseck Osugo </p>
 <!-- <div class="border-r-4 border-indigo-50"></div> -->
@@ -106,6 +114,19 @@
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 <script>
     const toggleModal = () => {
+      const bodyClassList = document.body.classList;
+
+      if (bodyClassList.contains("open")) {
+        bodyClassList.remove("open");
+        bodyClassList.add("closed");
+      } else {
+        bodyClassList.remove("closed");
+        bodyClassList.add("open");
+      }
+    };
+  </script>
+  <script>
+    const toggleModal1 = () => {
       const bodyClassList = document.body.classList;
 
       if (bodyClassList.contains("open")) {
