@@ -127,6 +127,18 @@ body.closed .modal {
   translate: -50% -50%;
 }
 
+body.open .modal1 {
+  opacity: 1;
+  visibility: visible;
+  animation: modal-in 1s;
+}
+
+body.closed .modal1 {
+  opacity: 0;
+  visibility: hidden;
+  translate: -50% -50%;
+}
+
 h2 {
   margin: 0 0 8px;
   font-weight: 400;
