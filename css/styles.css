@@ -27,9 +27,11 @@ button {
   0% {
     scale: 0 0.005;
   }
+
   33% {
     scale: 1 0.005;
   }
+
   66%,
   100% {
     scale: 1 1;
@@ -37,21 +39,6 @@ button {
 }
 
 .modal-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1, 1);
-  /* background: rgba(0, 0, 0, 0.5); */
-  background: #000000;
-  transition: 1.5s;
-}
-.modal-background1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,16 +61,38 @@ body.open .modal-background {
 }
 
 @keyframes modal-in {
+
   0%,
   66% {
     opacity: 0;
     visibility: hidden;
     translate: -50% -30%;
   }
+
   100% {
     opacity: 1;
     visibility: visible;
   }
+}
+
+.vl {
+  border-left: 3px solid black;
+  height: 200px;
+  margin-left: 300px;
+  margin-top: -200px;
+  /* background-color: red; */
+}
+.vl1 {
+  border-left: 3px solid black;
+  height: 50px;
+  margin-left: 400px;
+  margin-top: -200px;
+  /* background-color: red; */
+}
+.svg {
+  margin-left: 170px;
+  margin-top: 350px;
+  /* background-color: black; */
 }
 
 .modal {
@@ -94,12 +103,14 @@ body.open .modal-background {
   color: #f9f9f9;
   padding: 48px 40px;
   width: 300px;
+  height: auto;
   border-radius: 12px;
   translate: -50% -50%;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
 }
+
 /* .modal1{
     position: fixed;
     top: 30%;
