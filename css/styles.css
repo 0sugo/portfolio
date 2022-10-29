@@ -77,17 +77,37 @@ body.open .modal-background {
 
 .vl {
   border-left: 3px solid black;
-  height: 200px;
+  height: 230px;
   margin-left: 300px;
   margin-top: -200px;
   /* background-color: red; */
 }
 .vl1 {
-  border-left: 3px solid black;
-  height: 50px;
-  margin-left: 400px;
-  margin-top: -200px;
+  border-left: 3px solid rgb(255, 255, 255);
+  height: 20px;
+  margin-left: 300px;
+  margin-top: -210px;
   /* background-color: red; */
+}
+.vl2{
+  border-left: 3px solid rgb(165, 164, 164);
+  height: 30px;
+  margin-left: 300px;
+  margin-top: -180px;
+  /* background-color: red; */
+}
+.words{
+  margin-left: 260px;
+  margin-top: 20px;
+  font-size: 27px;
+  font-weight: bold;
+}
+.me{
+  margin-left: 260px;
+  margin-top: -200px;
+  font-size: 27px;
+  font-weight: bold;
+
 }
 .svg {
   margin-left: 170px;
