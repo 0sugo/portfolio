@@ -131,20 +131,7 @@ body.open .modal-background {
   transition: 0.3s;
 }
 
-/* .modal1{
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    background: #37353b;
-    color: #f9f9f9;
-    padding: 48px 40px;
-    width: 300px;
-    border-radius: 12px;
-    translate: -50% -50%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
-} */
+
 
 body.open .modal {
   opacity: 1;
