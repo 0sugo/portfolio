@@ -6,17 +6,9 @@ body {
 background-size: 200% 100%;
 }
 
-/* button {
-  font-family: inherit;
-  cursor: pointer;
-  background: #1a1a1a;
-  color: #f9f9f9;
-  border: 0;
-  border-radius: 8px;
-  padding: 20px 36px;
-  font-size: 16px;
-} */
+/* navigations */
 
+/* modal styles */
 @keyframes background-in {
   0% {
     scale: 0 0.005;
@@ -158,9 +150,32 @@ h2 {
   font-size: 21px;
 }
 
-p {
+#para {
   margin: 0;
   /* color: rgba(255, 255, 255, 0.5); */
   color: crimson;
 
+}
+
+/* resume button */
+#res{
+  margin-left: 20px;
+}
+#copy{
+  font-size: 10px;
+}
+/* footer */
+.footer{
+position:fixed;
+}
+@media only screen and (max-width: 600px) {
+  #res {
+    visibility: hidden;
+  }
+  .navig{
+    margin-left: 32px;
+  }
+  .footer{
+    margin:50%;
+  }
 }
