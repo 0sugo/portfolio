@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   overflow: hidden;
-  background: linear-gradient(to left, white 40%, black 30%) right;
+  background: linear-gradient(to left, white 40%, rgb(10, 43, 48) 30%) right;
 background-size: 200% 100%;
 }
 
