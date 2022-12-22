@@ -15,12 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link href="/hamburgers/dist/hamburgers.css" rel="stylesheet">
 
     <title>Joseck 0sugo</title>
 </head>
 
-<body class="md-grid">
+<body class="md-grid dark:bg-slate-800">
     <nav class=" h-max w-14 fixed z-10 top-0 right-0 overflow-x-visible p-4 hover:right-3.5">
         <div>
             <a class="pt-1.5 pr-4 pb-2 pl-2 block hover:text-2xl" href=""><i class="fa fa-fw fa-facebook"></i></a>
@@ -63,7 +62,8 @@
         <!-- <button  type="button" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Home</button> -->
         <button  onclick="toggleModal()" type="button" class="px-2 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">About</button>
         <button  type="button" class="px-6 py-2 sm:px-5 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Projects</button>                                                                                                                                                                      
-        <button  type="button" class=" px-2 py-2  text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Contact</button>
+        <button  type="button" class=" px-2 py-2  text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">contact</button>
+
 
 </nav>
 
@@ -119,27 +119,31 @@
         text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-red-700 dark:hover:bg-gray-600 
         dark:focus:ring-gray-800 mt-8"><span class="font-starter text-xl">RESUME</span></button> -->
 
+        <div id= "mob"class=" text-white font-semibold text-sm ml-2 ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+          </svg>
+        
+          </div>
+          <div class="pr-8  py-8 text-xl font-semibold text-white"><p>+254726526801</p></div>
+
+          
 
         <div id="res">
 <button type="button" class=" text-white hover:text-white border border-gray-800 
 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg 
-text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " >
-  <span class="font-starter text-xl ">RESUME</span>
+text-sm px-5 py-2.5 text-center inline-flex items-end dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " >
+  <span class="font-starter text-xl">RESUME</span>
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m-6 3.75l3 3m0 0l3-3m-3 3V1.5m6 9h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+  </svg>
+  
     
 </button>
         </div>
-  
+
         
-        
-
-      
-
-  
-
     <div class="modal-background" onclick="toggleModal()"></div>
     <div class="modal">
       <center>
@@ -162,28 +166,99 @@ text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:h
       
 
     </div>
-  
 
-    
+    <!-- cards -->
+ 
+    <div class="container">
+
+      <div class="card">
+        <!-- <img src="https://images.unsplash.com/photo-1615361200141-f45040f367be?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY1MjU1NjE&ixlib=rb-4.0.3&q=80" alt=""> -->
+        <img src="mechanicall1.svg" alt="">
+        <div class="card-text">
+          <h2>Mechanicall app</h2>
+          <h3>Web app that gives contact details of nearby mechanics and tow-trucks</h3>
+          </div>
+        <div class="info-card">
+          <div class="carda">
+
+            <button id="cardb" type="button" class=" text-white hover:text-white border border-gray-800 
+hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg 
+text-sm px-5 py-2.5 text-center inline-flex items-end dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " >
+  <span class="font-starter text-xl">see live</span><br>
+
+  <button id="cardb"  type="button" class=" text-white hover:text-white border border-gray-800 
+hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg 
+text-sm px-5 py-2.5 text-center inline-flex items-end dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " >
+  <span class="font-starter text-xl">see code</span>
+
+          </div>
+        </div>
+      </div>  
+
+      
+  <!-- <div class="card">
+      <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY1MjQ1NTk&ixlib=rb-4.0.3&q=80" alt="">
+    <div class="info-card">
+      <h1>Deliche</h1>
+      <p>Coffee, smothies & Sundaes</p>
+    </div>
+  </div> -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1484300681262-5cca666b0954?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY1MjQ1NTk&ixlib=rb-4.0.3&q=80" alt="">
+    <div class="info-card">
+      <h1>Grillz</h1>
+      <p>Steakhouse & Barbecue</p>
+    </div>
+  </div>  
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1613564834361-9436948817d1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY1MjU1ODM&ixlib=rb-4.0.3&q=80" alt="">
+    <div class="info-card">
+      <h1>Pizzarazi</h1>
+      <p>Napoli Style Pizza</p>
+    </div>
+  </div>  
+  <div class="card">
+    <!-- <img src="https://images.unsplash.com/photo-1615361200141-f45040f367be?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY1MjU1NjE&ixlib=rb-4.0.3&q=80" alt=""> -->
+    <img src="mechanicall1.svg" alt="">
+    <div class="card-text">
+      <h2>Mechanicall app</h2>
+      <h3>Web app that gives contact details of nearby mechanics and tow-trucks</h3>
+      </div>
+    <div class="info-card">
+      <div class="carda">
+
+        <button id="cardb" type="button" class=" text-white hover:text-white border border-gray-800 
+hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg 
+text-sm px-5 py-2.5 text-center inline-flex items-end dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " >
+<span class="font-starter text-xl">see live</span><br>
+
+<button id="cardb"  type="button" class=" text-white hover:text-white border border-gray-800 
+hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg 
+text-sm px-5 py-2.5 text-center inline-flex items-end dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 " >
+<span class="font-starter text-xl">see code</span>
+
+      </div>
+    </div>
+  </div>  
+</div>
+</div>
+
+
+  
+  
+  
+<div>
+  <!-- <div class="gallery_grid">
+    <div class="card"><div><img class="card-image" src="/static/media/menu-logo.16b1a0173097cadbd92f.png" alt="logo" height="150px"></div><div class="card-text"><h2>A Hotel Menu</h2><h3>A hotel menu built with Webpack/Vanillajs, HTML, CSS and we consume an API </h3><a target="_blank" rel="noreferrer" href="https://lusindiso.github.io/Javascript-Capstone/"><button type="button" class="flat-button">See Live</button></a><a target="_blank" rel="noreferrer" href="https://github.com/Lusindiso/Javascript-Capstone"><button type="button" class="flat-button">See Source</button></a></div><div class="card-stats"><img src="/static/media/jsweb.47692505d122dbcae490.png" alt="webpack" height="72px"><img src="/static/media/HTML5_logo.f7abe51a0a54a676319d.png" alt="html 5" height="72px"><img src="/static/media/css_logo.cd13bf0a8423210549cb.png" alt="webpack" height="72px"></div></div>
+      </div> -->
+    <!--footer  -->
   <footer class="footer">
-    <span class="block text-sm text-gray-500 dark:text-gray-400 bottom-2 fixed">© 2022 <a href="" class="hover:underline">| Joseck Osugo™</a>
+    <span class="block text-sm text-gray-400 dark:text-gray-400 left-0 w-full text-center bottom-0 fixed">© 2022 <a href="index.html" class="hover:underline">| Joseck Osugo™</a>
     </span>
 
 </footer>
 
-
-<script>
-  // Look for .hamburger
-  var hamburger = document.querySelector(".hamburger");
-  // On click
-  hamburger.addEventListener("click", function() {
-    // Toggle class "is-active"
-    hamburger.classList.toggle("is-active");
-    // Do something else, like open/close menu
-  });
-</script>
-
-
+</div>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 <script>
     const toggleModal = () => {
