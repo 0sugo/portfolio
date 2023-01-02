@@ -391,6 +391,13 @@ h2 {
 
 .container
 {
+  height:60vh;
+  display:flex;
+  font-family: 'Poppins', cursive;
+  margin: 0px 0px 0px -30px;
+}
+.container2
+{
   width:80%;
   height:60vh;
   display:flex;
