@@ -20,27 +20,199 @@ p{
   margin-left: 320px;
   /* background-color: brown; */
   max-width: 1210px;
-  padding-left: 5em;
-  font-family: poppins;
+  padding-left: 4em;
+  font-family: quicksand;
+  
 
 }
 .alongside h1{
 text-transform: uppercase;
 font-weight: 700;
-margin-top: 10%;
-margin-bottom: 30px;
 font-size: larger;
+
 }
 
 
 /* skills */
 
+.circle-chart {
+  width: 150px;
+  height: 150px;
+}
 
-.skills{
-  margin-top: 1%;
+.circle-chart__circle {
+  stroke: #00acc1;
+  stroke-width: 2;
+  stroke-linecap: square;
+  fill: none;
+  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+/**
+ * 1. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 2. Scaling mirrors the circle to make the stroke move right
+ *    to mark a positive chart value.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround.
+ */
+
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+}
+
+.circle-chart__background {
+  stroke: #efefef;
+  stroke-width: 2;
+  fill: none; 
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+.circle-chart__percent {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 8px;
+}
+
+.circle-chart__subline {
+    alignment-baseline: central;
+    text-anchor: middle;
+    font-size: 3px;
+}
+
+.success-stroke {
+  stroke: #00C851;
+}
+
+.warning-stroke {
+  stroke: #ffbb33;
+}
+
+.danger-stroke {
+  stroke: #ff4444;
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.skiller{
   flex-wrap: wrap;
   display: flex;
 }
+
+.skills_section{
+  width: 200%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  
+}
+
+
+.skills-area {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-skill {
+  width: 25%;
+}
+
+.success-stroke {
+  stroke: rgb(129, 86, 252);
+}
+
+.circle-chart__background {
+  stroke: #ede4e4;
+  stroke-width: 1;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+	.skill-icon {
+		width: 50%;
+	}
+	
+	.skill-icon i {
+		font-size: 70px;
+	}
+
+	.single-skill {
+		width: 50%;
+	}
+
+	.circle-chart {
+		width: 130px;
+		height: 130px;
+	}
+}
+
+
+
+
+
+/* footer */
+
+
+
+/* RESPONSIVENESS mobile*/
+@media only screen and (max-width: 768px) {
+  html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to left, white 35%, rgb(10, 43, 48) 30%) right;
+  background-size: 200% 100%;
+}
+  #res {
+    margin-left: -35px;
+    margin-top: 35px;
+    transform: scale(0.8);
+  }
+  .navig{
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .footer{
+    margin:35%;
+  }
+  #mob{
+    margin-right: 30px;
+  }
+  #me{
+    width: 100px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 5px;
+  }
+  
+}
+
+/* RESPONSIVENESS laptop*/
+@media only screen and (max-width: 600px) {
+
+
+}
+
+
 
 
 
@@ -327,181 +499,3 @@ margin-left: 30px;
 /* Skills */
 
 
-.circle-chart {
-  width: 150px;
-  height: 150px;
-}
-
-.circle-chart__circle {
-  stroke: #00acc1;
-  stroke-width: 2;
-  stroke-linecap: square;
-  fill: none;
-  animation: circle-chart-fill 2s reverse; /* 1 */ 
-  transform: rotate(-90deg); /* 2, 3 */
-  transform-origin: center; /* 4 */
-}
-
-/**
- * 1. Rotate by -90 degree to make the starting point of the
- *    stroke the top of the circle.
- * 2. Scaling mirrors the circle to make the stroke move right
- *    to mark a positive chart value.
- * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
- *    and Edge, use the transform attribute directly on the SVG element as a
- * .  workaround.
- */
-
-.circle-chart__circle--negative {
-  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
-}
-
-.circle-chart__background {
-  stroke: #efefef;
-  stroke-width: 2;
-  fill: none; 
-}
-
-.circle-chart__info {
-  animation: circle-chart-appear 2s forwards;
-  opacity: 0;
-  transform: translateY(0.3em);
-}
-
-.circle-chart__percent {
-  alignment-baseline: central;
-  text-anchor: middle;
-  font-size: 8px;
-}
-
-.circle-chart__subline {
-    alignment-baseline: central;
-    text-anchor: middle;
-    font-size: 3px;
-}
-
-.success-stroke {
-  stroke: #00C851;
-}
-
-.warning-stroke {
-  stroke: #ffbb33;
-}
-
-.danger-stroke {
-  stroke: #ff4444;
-}
-
-@keyframes circle-chart-fill {
-  to { stroke-dasharray: 0 100; }
-}
-
-@keyframes circle-chart-appear {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-.skills{
-color: black;
-}
-.skiller{
-  margin-left:-13%;
-  margin-top: 202px;
-}
-
-.skills_section{
-  width: 200%;
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-
-
-.skills-area {
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.single-skill {
-  width: 25%;
-}
-
-.success-stroke {
-  stroke: rgb(129, 86, 252);
-}
-
-.circle-chart__background {
-  stroke: #ede4e4;
-  stroke-width: 1;
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-
-	.skill-icon {
-		width: 50%;
-	}
-	
-	.skill-icon i {
-		font-size: 70px;
-	}
-
-	.single-skill {
-		width: 50%;
-	}
-
-	.circle-chart {
-		width: 130px;
-		height: 130px;
-	}
-}
-
-
-
-
-
-/* footer */
-
-
-
-/* RESPONSIVENESS mobile*/
-@media only screen and (max-width: 768px) {
-  html,
-body {
-  height: 100%;
-  overflow: hidden;
-  background: linear-gradient(to left, white 35%, rgb(10, 43, 48) 30%) right;
-  background-size: 200% 100%;
-}
-  #res {
-    margin-left: -35px;
-    margin-top: 35px;
-    transform: scale(0.8);
-  }
-  .navig{
-    margin-left: 100px;
-    margin-top: 10px;
-  }
-  .footer{
-    margin:35%;
-  }
-  #mob{
-    margin-right: 30px;
-  }
-  #me{
-    width: 100px;
-    height: auto;
-    border-radius: 20%;
-    margin-left: 5px;
-  }
-  
-}
-
-/* RESPONSIVENESS laptop*/
-@media only screen and (max-width: 600px) {
-
-
-}
