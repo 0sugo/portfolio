@@ -8,7 +8,7 @@ html, body {
   
   background: linear-gradient(120deg, powderblue 30%, transparent);
 }
-
+/* navbar */
 .sidebar {
   width:max(250px, 20vw);
   background:cadetblue;
@@ -18,25 +18,20 @@ html, body {
   text-transform: uppercase;
 
 } 
-
-/* .sidebar .side-header {
-  margin:0 auto;
-  padding:1em 4em 1em 0em;
-  width:max-content;
-  background-image: url("https://www.iconpacks.net/icons/1/free-icon-pie-chart-660.png");
-  background-repeat:no-repeat;
-  background-position:right center;
-  background-size:auto 90%;
+.sav{
+  /* margin-left: 46%; */
+  padding-left: 6%;
+  margin-top: 30%;
+  margin-bottom: 30px;
+  
 }
-
-.side-header h1,.side-header p {
-  margin:0;
-  color:white;
+div h2{
+  text-align: center;
+  margin-top: 10px;
+  font-family: quicksand;
+  font-weight: 600;
+  font-size: 20px;
 }
-
-.side-header p {
-  text-align:right;
-} */
 
 
 .sidenav {
@@ -47,11 +42,10 @@ html, body {
   position:relative;
   margin-top: 0.3em;
   align-items: center;
+  margin-top: 70px;
+  font-size: smaller;
 }
-.sidenav ::selection{
-  font-weight: bold;
 
-}
 
 .sidenav .button-container {
     width: 100%;
@@ -64,18 +58,21 @@ html, body {
   z-index:2;
   display:flex;
   align-items: center;
-  gap:0.2em;
+  gap:0.1em;
+  
 }
-/* .sidenav .button:hover{
-
-} */
-.button:nth-child(10) {
+.sidenav .button:hover{
+font-weight: bold;
+}
+/* .button:nth-child(10) {
   margin-top:auto;
-}
+} */
 
 .sidenav .checkbox {
   position:absolute;
   z-index:-1;
+  display: none;
+  
 }
 
 .slide {
@@ -86,7 +83,7 @@ html, body {
   top:0;
   z-index:1;
   opacity:0.5;
-  transition:all 0.5s;
+  transition:all 1.5s;
       background: linear-gradient(45deg, lightgrey, transparent);
       box-sizing: border-box;
     border-left: solid 0.5em royalblue;
@@ -95,6 +92,7 @@ html, body {
 
 [id="0"]:checked ~ .slide {
   --step-:0;
+  
 }
 [id="1"]:checked ~ .slide {
   --step-:1;
@@ -106,10 +104,18 @@ html, body {
   --step-:3;
 }
 [id="4"]:checked ~ .slide {
-  top:calc(100% - 3.55em);
+  --step-:4;
 }
+
+/* [id="4"]:checked ~ .slide {
+  top:calc(100% - 3.55em);
+} */
 
 .sidenav .checkbox:checked ~ .slide {
     transform: translateY(calc(var(--step-) * 100%));
     
+}
+input:checked ~ span {
+  border-color: black;
+  font-weight: bold;
 }

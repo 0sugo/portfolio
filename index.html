@@ -11,16 +11,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
 
     <title>Joseck 0sugo</title>
 </head>
 
 <body class="md-grid dark:bg-slate-800">
-    <nav class=" h-max w-14 fixed z-10 top-0 right-0 overflow-x-visible p-4 hover:right-3.5">
+    <nav class=" h-max w-14 fixed z-10 top-0 right-0 overflow-x-visible p-4 hover:left-3.5">
         <div>
             <a class="pt-1.5 pr-4 pb-2 pl-2 block hover:text-2xl" href=""><i class="fa fa-fw fa-facebook"></i></a>
             <a class="pt-1.5 pr-4 pb-2 pl-2 block hover:text-2xl" href=""><i class="fa fa-fw fa-linkedin"></i></a>
@@ -57,6 +54,7 @@
             </svg>
 
     </div>
+    
     <div class="flex justify-center space-x-4 pt-16 md:p-60">
       <nav class="navig">
         <!-- <button  type="button" class="px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900 hover:underline-offset-8">Home</button> -->
@@ -286,6 +284,55 @@ text-sm px-5 py-2.5 text-center inline-flex items-end dark:bg-blue-600 dark:hove
       }
     };
   </script>
+  
+  <!-- <script>
+    function makesvg(percentage, inner_text=""){
+
+var abs_percentage = Math.abs(percentage).toString();
+var percentage_str = percentage.toString();
+var classes = ""
+
+if(percentage < 0){
+  classes = "danger-stroke circle-chart__circle--negative";
+} else if(percentage > 0 && percentage <= 30){
+  classes = "warning-stroke";
+} else{
+  classes = "success-stroke";
+}
+
+var svg = '<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">'
+   + '<circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9" />'
+   + '<circle class="circle-chart__circle '+classes+'"'
+   + 'stroke-dasharray="'+ abs_percentage+',100"    cx="16.9" cy="16.9" r="15.9" />'
+   + '<g class="circle-chart__info">'
+   + '   <text class="circle-chart__percent" x="17.9" y="15.5">'+percentage_str+'%</text>';
+
+if(inner_text){
+  svg += '<text class="circle-chart__subline" x="16.91549431" y="22">'+inner_text+'</text>'
+}
+
+svg += ' </g></svg>';
+
+return svg
+}
+
+(function( $ ) {
+
+  $.fn.circlechart = function() {
+      this.each(function() {
+          var percentage = $(this).data("percentage");
+          var inner_text = $(this).text();
+          $(this).html(makesvg(percentage, inner_text));
+      });
+      return this;
+  };
+
+}( jQuery ));
+
+$(function () {
+   $('.circlechart').circlechart();
+});
+  </script> -->
 </body>
 
 </html>
