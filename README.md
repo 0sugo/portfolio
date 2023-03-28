@@ -5,6 +5,6 @@
 
 - 🌱 I’m currently learning **Full Stack Developer**
 
-- 👨‍💻 All of my projects are available at [https://github.com/AnsarIbrahim?tab=repositories]
+- 👨‍💻 All of my projects are available at [https://github.com/0sugo?tab=repositories]
 
 - 📫 How to reach me **josugo38@gmail.com**
