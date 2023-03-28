@@ -2,3 +2,9 @@
 
 <h1 align="center">Hi 👋, I'm Joseck Osugo</h1>
 <h3 align="center">A passionate full-stack developer from Nairobi,Kenya</h3>
+
+- 🌱 I’m currently learning **Full Stack Developer**
+
+- 👨‍💻 All of my projects are available at [https://github.com/AnsarIbrahim?tab=repositories]
+
+- 📫 How to reach me **josugo38@gmail.com**
