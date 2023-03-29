@@ -3,8 +3,12 @@
 <h1 align="center">Hi 👋, I'm Joseck Osugo</h1>
 <h3 align="center">A passionate full-stack developer from Nairobi,Kenya</h3>
 
-- 🌱 I’m currently learning **Full Stack Developer**
+- 🌱 I’m currently learning **Full Stack development at Microverse🖖**
 
 - 👨‍💻 All of my projects are available at [https://github.com/0sugo?tab=repositories]
 
-- 📫 How to reach me **josugo38@gmail.com**
+- 📫 How to reach me  <br>
+[↘︎Portfolio]('')
+[↘︎Email](mailto:josugo38@gmail.com)
+[↘︎Linkedin](https://www.linkedin.com/in/joseck-osugo-873b0618a/) 
+[↘︎Twitter](https://twitter.com/osugo5) 
