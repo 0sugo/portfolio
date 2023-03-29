@@ -7,7 +7,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/0sugo?tab=repositories]
 
-- 📫 How to reach me  <br>
+- 📫 Get to me on: <br>
 [↘︎Portfolio]('')
 [↘︎Email](mailto:josugo38@gmail.com)
 [↘︎Linkedin](https://www.linkedin.com/in/joseck-osugo-873b0618a/) 
