@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Full Stack development at Microverse🖖**
 
-- 👨‍💻 All of my projects are available at [https://github.com/0sugo?tab=repositories]
+- 👨‍💻 All of my projects are available at [Briefcase](https://github.com/0sugo?tab=repositories)
 
 - 📫 Get to me on: <br>
 [↘︎Portfolio]('')
